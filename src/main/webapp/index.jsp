@@ -8,8 +8,11 @@
 <title>깃 테스트 http://localhost:9091/index.jsp</title>
 </head>
 <body>
-  <DIV style="margin: 50px;">
-      <H1>깃 테스트</H1>
-  </DIV> 
+  <div style="margin: 50px;">
+      <h1>깃 테스트</h1>
+      <ol>
+        <li>첫번째 변경 진행함.</li>
+      </ol>
+  </div> 
 </body>
 </html>
