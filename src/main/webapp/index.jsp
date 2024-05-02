@@ -11,7 +11,7 @@
   <div style="margin: 50px;">
       <h1>깃 테스트</h1>
       <ol>
-          <li>ljh: 범죄도시4/해운대/초밥</li>
+          <li>ljh: 범죄도시4/해운대/초밥/참이슬</li>
 
       </ol>
   </div> 
