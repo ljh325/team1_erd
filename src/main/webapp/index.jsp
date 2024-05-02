@@ -11,7 +11,7 @@
   <div style="margin: 50px;">
       <h1>깃 테스트</h1>
       <ol>
-          <li>ljh.</li>
+          <li>ljh: 범죄도시4</li>
 
       </ol>
   </div> 
