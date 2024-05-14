@@ -250,8 +250,8 @@
                               <constraint>
                                 <height>-1</height>
                                 <width>-1</width>
-                                <x>1165</x>
-                                <y>335</y>
+                                <x>1109</x>
+                                <y>301</y>
                               </constraint>
                               <sourceConnections>
                                 <net.java.amateras.db.visual.model.ForeignKeyModel reference="../../.."/>
@@ -1861,7 +1861,7 @@
                               </targetConnections>
                               <error></error>
                               <linkedPath></linkedPath>
-                              <tableName>HELTH</tableName>
+                              <tableName>HEALTH</tableName>
                               <logicalName>운동 종류</logicalName>
                               <description></description>
                               <columns>
@@ -1882,7 +1882,7 @@
                                   <defaultValue></defaultValue>
                                 </net.java.amateras.db.visual.model.ColumnModel>
                                 <net.java.amateras.db.visual.model.ColumnModel>
-                                  <columnName>DATE</columnName>
+                                  <columnName>RDATE</columnName>
                                   <logicalName>등록일</logicalName>
                                   <columnType class="net.java.amateras.db.dialect.ColumnType">
                                     <name>DATE</name>
@@ -1925,7 +1925,7 @@
                                   <defaultValue></defaultValue>
                                 </net.java.amateras.db.visual.model.ColumnModel>
                                 <net.java.amateras.db.visual.model.ColumnModel>
-                                  <columnName>HELTHPHOTO</columnName>
+                                  <columnName>HEALTHPHOTO</columnName>
                                   <logicalName>운동사진</logicalName>
                                   <columnType class="net.java.amateras.db.dialect.ColumnType">
                                     <name>VARCHAR2</name>
@@ -1959,20 +1959,14 @@
                                 <net.java.amateras.db.visual.model.ColumnModel>
                                   <columnName>HEALTHCATENO</columnName>
                                   <logicalName>헬스카테고리번호</logicalName>
-                                  <columnType class="net.java.amateras.db.dialect.ColumnType" reference="../../net.java.amateras.db.visual.model.ColumnModel/columnType"/>
+                                  <columnType class="net.java.amateras.db.dialect.ColumnType">
+                                    <name>NUMBER</name>
+                                    <logicalName>Numeric</logicalName>
+                                    <supportSize>true</supportSize>
+                                    <type>2</type>
+                                  </columnType>
                                   <size>10</size>
-                                  <notNull>false</notNull>
-                                  <primaryKey>false</primaryKey>
-                                  <description></description>
-                                  <autoIncrement>false</autoIncrement>
-                                  <defaultValue></defaultValue>
-                                </net.java.amateras.db.visual.model.ColumnModel>
-                                <net.java.amateras.db.visual.model.ColumnModel>
-                                  <columnName>HELTHCATENO</columnName>
-                                  <logicalName>헬스카테고리번호</logicalName>
-                                  <columnType class="net.java.amateras.db.dialect.ColumnType" reference="../../net.java.amateras.db.visual.model.ColumnModel/columnType"/>
-                                  <size>10</size>
-                                  <notNull>false</notNull>
+                                  <notNull>true</notNull>
                                   <primaryKey>false</primaryKey>
                                   <description></description>
                                   <autoIncrement>false</autoIncrement>
@@ -1999,9 +1993,14 @@
                         <description></description>
                         <columns>
                           <net.java.amateras.db.visual.model.ColumnModel>
-                            <columnName>HELTHCATENO</columnName>
+                            <columnName>HEALTHCATENO</columnName>
                             <logicalName>헬스카테고리번호</logicalName>
-                            <columnType class="net.java.amateras.db.dialect.ColumnType" reference="../../../targetConnections/net.java.amateras.db.visual.model.ForeignKeyModel/source/columns/net.java.amateras.db.visual.model.ColumnModel/columnType"/>
+                            <columnType class="net.java.amateras.db.dialect.ColumnType">
+                              <name>NUMBER</name>
+                              <logicalName>Numeric</logicalName>
+                              <supportSize>true</supportSize>
+                              <type>2</type>
+                            </columnType>
                             <size>10</size>
                             <notNull>true</notNull>
                             <primaryKey>true</primaryKey>
@@ -2119,7 +2118,12 @@
                     <net.java.amateras.db.visual.model.ColumnModel>
                       <columnName>ADMINNO</columnName>
                       <logicalName>관리자 번호</logicalName>
-                      <columnType class="net.java.amateras.db.dialect.ColumnType" reference="../../../targetConnections/net.java.amateras.db.visual.model.ForeignKeyModel/source/columns/net.java.amateras.db.visual.model.ColumnModel[4]/columnType"/>
+                      <columnType class="net.java.amateras.db.dialect.ColumnType">
+                        <name>NUMBER</name>
+                        <logicalName>Numeric</logicalName>
+                        <supportSize>true</supportSize>
+                        <type>2</type>
+                      </columnType>
                       <size>10</size>
                       <notNull>false</notNull>
                       <primaryKey>true</primaryKey>
@@ -2136,7 +2140,7 @@
                         <supportSize>true</supportSize>
                         <type>12</type>
                       </columnType>
-                      <size>10</size>
+                      <size>30</size>
                       <notNull>true</notNull>
                       <primaryKey>false</primaryKey>
                       <description></description>
@@ -2147,7 +2151,7 @@
                       <columnName>PASSWORD</columnName>
                       <logicalName>관리자 패스워드</logicalName>
                       <columnType class="net.java.amateras.db.dialect.ColumnType" reference="../../net.java.amateras.db.visual.model.ColumnModel[2]/columnType"/>
-                      <size>10</size>
+                      <size>200</size>
                       <notNull>true</notNull>
                       <primaryKey>false</primaryKey>
                       <description></description>
