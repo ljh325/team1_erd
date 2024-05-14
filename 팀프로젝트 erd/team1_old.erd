@@ -1585,7 +1585,7 @@
                                                       <supportSize>true</supportSize>
                                                       <type>12</type>
                                                     </columnType>
-                                                    <size>300</size>
+                                                    <size>4000</size>
                                                     <notNull>true</notNull>
                                                     <primaryKey>false</primaryKey>
                                                     <description></description>
@@ -1778,7 +1778,7 @@
                                         <columnName>RECOM</columnName>
                                         <logicalName>운동추천내용</logicalName>
                                         <columnType class="net.java.amateras.db.dialect.ColumnType" reference="../../../sourceConnections/net.java.amateras.db.visual.model.ForeignKeyModel/target/targetConnections/net.java.amateras.db.visual.model.ForeignKeyModel[2]/source/columns/net.java.amateras.db.visual.model.ColumnModel[2]/columnType"/>
-                                        <size>300</size>
+                                        <size>4000</size>
                                         <notNull>true</notNull>
                                         <primaryKey>false</primaryKey>
                                         <description></description>
